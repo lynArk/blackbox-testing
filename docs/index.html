@@ -1,0 +1,170 @@
+<html>
+<head>
+    <title>Restaurant Preferences Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <header class="text-center mb-4">
+            <h1 class="text-2xl font-bold text-gray-800">Restaurant Preferences Tracker</h1>
+        </header>
+        
+        <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+            <h2 class="text-xl font-semibold text-gray-700 mb-2">Add New Preference</h2>
+            <form class="space-y-4">
+                <div>
+                    <label for="restaurant" class="block text-gray-600">Restaurant Name</label>
+                    <input type="text" id="restaurant" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Enter restaurant name">
+                </div>
+                <div>
+                    <label for="item" class="block text-gray-600">Item</label>
+                    <input type="text" id="item" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Enter item name">
+                </div>
+                <div>
+                    <label for="rating" class="block text-gray-600">Rating</label>
+                    <select id="rating" class="w-full p-2 border border-gray-300 rounded-md">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="review" class="block text-gray-600">Review/Notes</label>
+                    <textarea id="review" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Write your review or notes here"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md">Add Preference</button>
+            </form>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+            <h2 class="text-xl font-semibold text-gray-700 mb-2">Search Preferences</h2>
+            <div class="relative">
+                <input type="text" id="search" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Search for restaurants or items">
+                <button class="absolute right-2 top-2 text-gray-500"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-semibold text-gray-700 mb-2">Your Restaurants</h2>
+            <div class="space-y-4">
+                <a href="#restaurantA" class="block p-2 border-b border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800">Restaurant A</h3>
+                </a>
+                <a href="#restaurantB" class="block p-2 border-b border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800">Restaurant B</h3>
+                </a>
+                <a href="#restaurantC" class="block p-2 border-b border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800">Restaurant C</h3>
+                </a>
+                <a href="#restaurantD" class="block p-2 border-b border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800">Restaurant D</h3>
+                </a>
+                <a href="#restaurantE" class="block p-2 border-b border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800">Restaurant E</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Restaurant Details -->
+    <div id="restaurantA" class="container mx-auto p-4 mt-4 bg-white rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">Restaurant A</h2>
+        <div class="space-y-4">
+            <div class="p-2 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-800">Item: Ranch</h3>
+                <p class="text-gray-600">Rating: 5 Stars</p>
+                <p class="text-gray-600">Review: The best ranch I've ever had!</p>
+                <button class="text-red-500"><i class="fas fa-trash-alt"></i></button>
+            </div>
+            <div class="p-2 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-800">Item: Salad</h3>
+                <p class="text-gray-600">Rating: 4 Stars</p>
+                <p class="text-gray-600">Review: Fresh and tasty.</p>
+                <button class="text-red-500"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="restaurantB" class="container mx-auto p-4 mt-4 bg-white rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">Restaurant B</h2>
+        <div class="space-y-4">
+            <div class="p-2 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-800">Item: Ranch</h3>
+                <p class="text-gray-600">Rating: 2 Stars</p>
+                <p class="text-gray-600">Review: Too watery.</p>
+                <button class="text-red-500"><i class="fas fa-trash-alt"></i></button>
+            </div>
+            <div class="p-2 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-800">Item: Burger</h3>
+                <p class="text-gray-600">Rating: 3 Stars</p>
+                <p class="text-gray-600">Review: Average taste.</p>
+                <button class="text-red-500"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="restaurantC" class="container mx-auto p-4 mt-4 bg-white rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">Restaurant C</h2>
+        <div class="space-y-4">
+            <div class="p-2 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-800">Item: Ranch</h3>
+                <p class="text-gray-600">Rating: 4 Stars</p>
+                <p class="text-gray-600">Review: Pretty good.</p>
+                <button class="text-red-500"><i class="fas fa-trash-alt"></i></button>
+            </div>
+            <div class="p-2 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-800">Item: Pizza</h3>
+                <p class="text-gray-600">Rating: 5 Stars</p>
+                <p class="text-gray-600">Review: Delicious and cheesy.</p>
+                <button class="text-red-500"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="restaurantD" class="container mx-auto p-4 mt-4 bg-white rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">Restaurant D</h2>
+        <div class="space-y-4">
+            <div class="p-2 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-800">Item: Ranch</h3>
+                <p class="text-gray-600">Rating: 1 Star</p>
+                <p class="text-gray-600">Review: Terrible taste.</p>
+                <button class="text-red-500"><i class="fas fa-trash-alt"></i></button>
+            </div>
+            <div class="p-2 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-800">Item: Pasta</h3>
+                <p class="text-gray-600">Rating: 3 Stars</p>
+                <p class="text-gray-600">Review: Just okay.</p>
+                <button class="text-red-500"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="restaurantE" class="container mx-auto p-4 mt-4 bg-white rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">Restaurant E</h2>
+        <div class="space-y-4">
+            <div class="p-2 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-800">Item: Ranch</h3>
+                <p class="text-gray-600">Rating: 5 Stars</p>
+                <p class="text-gray-600">Review: Perfect consistency and flavor.</p>
+                <button class="text-red-500"><i class="fas fa-trash-alt"></i></button>
+            </div>
+            <div class="p-2 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-800">Item: Steak</h3>
+                <p class="text-gray-600">Rating: 4 Stars</p>
+                <p class="text-gray-600">Review: Cooked to perfection.</p>
+                <button class="text-red-500"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
